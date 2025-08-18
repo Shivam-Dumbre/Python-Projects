@@ -1,2 +1,2 @@
-print ("Test File")
-
+name = input("Enter your name: ")
+print(f"Hello {name}")
