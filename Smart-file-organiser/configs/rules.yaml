@@ -1,0 +1,18 @@
+watch_dir: "/Users/you/Downloads"
+dest_root: "/Users/you/Sorted"
+dry_run: true
+conflict: "rename"
+rules:
+  - name: "Images"
+    pattern: "\\.(jpg|jpeg|png|gif|heic)$"
+    dest: "Images"
+  - name: "Videos"
+    pattern: "\\.(mp4|mov|mkv|avi)$"
+    dest: "Videos"
+  - name: "Docs"
+    pattern: "\\.(pdf|docx?|xlsx?|pptx?)$"
+    dest: "Documents"
+  - name: "Archives"
+    pattern: "\\.(zip|tar|gz|7z)$"
+    dest: "Archives"
+default_dest: "Others"
