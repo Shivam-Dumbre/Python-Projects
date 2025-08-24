@@ -1,5 +1,5 @@
-watch_dir: "/Users/you/Downloads"
-dest_root: "/Users/you/Sorted"
+watch_dir: "/Users/you/Downloads" #Folder where all incoming files are watched
+dest_root: "/Users/you/Sorted" #Root folder where files will be sorted
 dry_run: true
 conflict: "rename"
 rules:
