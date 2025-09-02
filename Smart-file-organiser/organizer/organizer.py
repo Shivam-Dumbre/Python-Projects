@@ -46,4 +46,13 @@ def watch_folder():
         time.sleep(3)
 
 if __name__ == "__main__":
-    watch_folder()
+    from pathlib import Path
+    from organizer.config import load_settings
+
+    config_path = Path("configs/config.yaml")
+    settings = load_settings(config_path)
+
+    from organizer.core import FileOrganizer
+    organizer = FileOrganizer(settings)
+    organizer.run()
+
