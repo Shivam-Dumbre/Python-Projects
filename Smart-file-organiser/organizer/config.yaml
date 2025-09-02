@@ -1,0 +1,12 @@
+watch_dir: "D:/Git Repos/Python-Projects/Smart-file-organiser/tests/test_watch"
+output_dir: "D:/Git Repos/Python-Projects/Smart-file-organiser/tests/test_sorted"
+
+rules:
+  - name: Images
+    extensions: [".jpg", ".jpeg", ".png", ".gif"]
+
+  - name: Videos
+    extensions: [".mp4", ".mkv", ".avi"]
+
+  - name: Documents
+    extensions: [".pdf", ".docx", ".txt"]
