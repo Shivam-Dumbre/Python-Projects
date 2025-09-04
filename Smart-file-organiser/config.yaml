@@ -1,5 +1,5 @@
-watch_dir: "D:/Git Repos/Python-Projects/Smart-file-organiser/tests/test_watch"
-output_dir: "D:/Git Repos/Python-Projects/Smart-file-organiser/tests/test_sorted"
+watch_dir: "D:/Photos/Malvan/Enhanced/test_watch"
+output_dir: "D:/Photos/Malvan/Enhanced/test_sorted"
 
 rules:
   - name: Images
