@@ -78,14 +78,14 @@ def main():
 
         print(f"\n{title}")
         print("-" * 30)
-        print(f"Total Spend: ₹{total:.2f}\n")
+        print(f"Total Spend: Rs{total:.2f}\n")
 
         print("By Category:")
         if not by_category:
             print("No expenses found")
         else:
             for cat, amt in by_category.items():
-                print(f"{cat.capitalize():12} ₹{amt:.2f}")
+                print(f"{cat.capitalize():12} Rs{amt:.2f}")
         return
 
     elif args.command == "list":
@@ -98,7 +98,7 @@ def main():
         print("-" * 60)
         print(f"{'ID':>3} {'Date':10} {'Category':12} {'Amount':>10}  Note")
         for r in expenses:
-            print(f"{r['id']:3} {r['date']:10} {r['category']:<12} ₹{r['amount']:8.2f}  {r['note']}")
+            print(f"{r['id']:>3} {r['date']:10} {r['category']:12} Rs{r['amount']:>8.2f}  {r['note']}")
         return
 
     elif args.command == "remove":
